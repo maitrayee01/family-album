@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            My Family Album
+        </title>
+    </head>
+    <body>
+          <center style="margin-top: 40px;">
+          <h1>
+              My Family Album
+          </h1>
+          <img src="https://tse4.mm.bing.net/th?id=OIP.m3LztPLM--szTNS73Rt51gHaFj&pid=Api&P=0&w=202&h=152" >
+          <h4 id="_family_member_name"></h4>
+              <button onclick="update();">next</button>
+          </center> 
+          <script>
+              var images=[blob:https://web.whatsapp.com/bfb4a4d2-de61-4618-845d-2d1ba0e5fec4, blob:https://web.whatsapp.com/65fe6827-7078-417e-b8e5-02f1235058c5 ,blob:https://web.whatsapp.com/78f7d033-f612-4f58-b64d-181abcbcac3f ,blob:https://web.whatsapp.com/5a812a39-cc9e-4665-aa33-d0785f0b29c2];
+              var names=["family book" , "Mr. Vishudhanand Dhondiyal" , "Mrs. Suniti Dhondiyal" , "Ms. Pratishtha Dhondiyal" , "Ms. Maitrayee Dhondiyal"];
+                var i = 0;  
+                function update()  
+                {
+                    i++;
+                    var number_of_family_members_in_array=4;
+                    if(i > number_of_family_members_in_array)
+                    {
+                        i = 0;
+                    }
+                    var updateImage = images[i]
+                    var updateName = name[i]
+                    document.getElementById(family_member_image).src=updatedImage;
+                    document.getElementById(family_member_name).innerHTML=updatedName;
+                }
+              </script> 
+    </body>
+</html>
